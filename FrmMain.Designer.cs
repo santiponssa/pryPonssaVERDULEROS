@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.dgvVentas = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblVentas = new System.Windows.Forms.Label();
+            this.btnLeer = new System.Windows.Forms.Button();
             this.CodVendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,26 +49,27 @@
             this.dgvVentas.Location = new System.Drawing.Point(12, 146);
             this.dgvVentas.Name = "dgvVentas";
             this.dgvVentas.ReadOnly = true;
-            this.dgvVentas.Size = new System.Drawing.Size(549, 217);
+            this.dgvVentas.Size = new System.Drawing.Size(451, 217);
             this.dgvVentas.TabIndex = 0;
             // 
-            // label1
+            // lblVentas
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblVentas.AutoSize = true;
+            this.lblVentas.Location = new System.Drawing.Point(49, 38);
+            this.lblVentas.Name = "lblVentas";
+            this.lblVentas.Size = new System.Drawing.Size(40, 13);
+            this.lblVentas.TabIndex = 1;
+            this.lblVentas.Text = "Ventas";
             // 
-            // button1
+            // btnLeer
             // 
-            this.button1.Location = new System.Drawing.Point(106, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLeer.Location = new System.Drawing.Point(95, 33);
+            this.btnLeer.Name = "btnLeer";
+            this.btnLeer.Size = new System.Drawing.Size(75, 23);
+            this.btnLeer.TabIndex = 2;
+            this.btnLeer.Text = "Leer";
+            this.btnLeer.UseVisualStyleBackColor = true;
+            this.btnLeer.Click += new System.EventHandler(this.btnLeer_Click);
             // 
             // CodVendedor
             // 
@@ -84,13 +85,13 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Column2";
+            this.Column2.HeaderText = "Fecha";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Column3";
+            this.Column3.HeaderText = "Kilos";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
@@ -98,9 +99,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 375);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(475, 375);
+            this.Controls.Add(this.btnLeer);
+            this.Controls.Add(this.lblVentas);
             this.Controls.Add(this.dgvVentas);
             this.Name = "FrmMain";
             this.Text = "Ventas Verduleria";
@@ -114,12 +115,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvVentas;
+        private System.Windows.Forms.Label lblVentas;
+        private System.Windows.Forms.Button btnLeer;
         private System.Windows.Forms.DataGridViewTextBoxColumn CodVendedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
     }
 }
 

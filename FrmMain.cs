@@ -13,12 +13,21 @@ namespace pryPonssaVERDULEROS
 {
     public partial class FrmMain : Form
     {
+        OleDbCommand comm = new OleDbCommand();
+        OleDbConnection conn = new OleDbConnection();
+
+
         public FrmMain()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLeer_Click(object sender, EventArgs e)
         {
 
         }
