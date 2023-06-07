@@ -27,8 +27,8 @@ namespace pryPonssaVERDULEROS
             try
             {
                 objBD.ConectarBD();
-                objBD.CargarLst(lstNombreVend);
-                objBD.CargarLst(lstNombreProd);
+                objBD.CargarLst(cmb1)(lstNombreVend);
+                objBD.CargarLst(cmb2)(lstNombreProd);
 
             }
             catch (Exception exc)
