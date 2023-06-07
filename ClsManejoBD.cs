@@ -53,48 +53,5 @@ namespace pryPonssaVERDULEROS
             }
             rdr.Close();
         }
-
-        public void CargarLst(ComboBox cmb, string NombreVendedor)
-        {
-            comm.Connection = conn;
-            comm.CommandType = System.Data.CommandType.TableDirect;
-            comm.CommandText = "Vendedores";
-
-            rdr = comm.ExecuteReader();
-
-            //Limpio para que o se acumule 
-            //cmb.Items.Clear();
-
-            while (rdr.Read())
-            {
-                if (rdr.GetString(1) == NombreVendedor)
-                {
-                    cmb.Items.Add(rdr.GetString(5));
-                }
-
-            }
-            rdr.Close();
-        }
-        public void CargarLst(ComboBox cmb, string NombreProducto)
-        {
-            comm.Connection = conn;
-            comm.CommandType = System.Data.CommandType.TableDirect;
-            comm.CommandText = "Productos";
-
-            rdr = comm.ExecuteReader();
-
-            //Limpio para que o se acumule 
-            //cmb.Items.Clear();
-
-            while (rdr.Read())
-            {
-                if (rdr.GetString(1) == NombreProducto)
-                {
-                    cmb.Items.Add(rdr.GetString(5));
-                }
-
-            }
-            rdr.Close();
-        }
     }
 }
