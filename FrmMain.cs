@@ -37,7 +37,7 @@ namespace pryPonssaVERDULEROS
 
         private void btnLeer_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
