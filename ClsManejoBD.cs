@@ -32,7 +32,7 @@ namespace pryPonssaVERDULEROS
                 MessageBox.Show("Error: " + error.Message);
             }
         }
-        public void CargarLst(ComboBox cmb)
+        public void CargarLst(ComboBox cmb1, ComboBox cmb2)
         {
             comm.Connection = conn;
             comm.CommandType = System.Data.CommandType.TableDirect;
@@ -41,7 +41,7 @@ namespace pryPonssaVERDULEROS
             //cmb.Items.Clear();
             while (rdr.Read())
             {
-                cmb.Items.Add(rdr.GetString(1));
+                cmb1.Items.Add(rdr.GetString(1));
             }
             rdr.Close();
             comm.CommandText = "Productos";
@@ -49,7 +49,7 @@ namespace pryPonssaVERDULEROS
             //cmb.Items.Clear();
             while (rdr.Read())
             {
-                cmb.Items.Add(rdr.GetString(1));
+                cmb2.Items.Add(rdr.GetString(1));
             }
             rdr.Close();
         }

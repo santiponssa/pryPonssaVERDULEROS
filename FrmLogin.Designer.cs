@@ -1,6 +1,6 @@
 ﻿namespace pryPonssaVERDULEROS
 {
-    partial class FrmLogin
+    partial class FrmRegistro
     {
         /// <summary>
         /// Required designer variable.
@@ -127,7 +127,7 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "VERDULERIA";
             // 
-            // FrmLogin
+            // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,9 +135,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FrmLogin";
+            this.Name = "FrmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ingreso";
+            this.Text = "Registro de ventas";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

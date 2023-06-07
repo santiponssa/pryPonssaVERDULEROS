@@ -11,13 +11,13 @@ using System.Data.OleDb;
 
 namespace pryPonssaVERDULEROS
 {
-    public partial class FrmLogin : Form
+    public partial class FrmRegistro : Form
     {
         ClsManejoBD objBD = new ClsManejoBD();
         OleDbCommand comm = new OleDbCommand();
         OleDbConnection conn = new OleDbConnection();
         OleDbDataReader rdr;
-        public FrmLogin()
+        public FrmRegistro()
         {
             InitializeComponent();
         }
