@@ -27,11 +27,15 @@ namespace pryPonssaVERDULEROS
             try
             {
                 objBD.ConectarBD();
+                objBD.CargarLst(lstNombreVend);
+                objBD.CargarLst(lstNombreProd);
+
             }
             catch (Exception exc)
             {
                 MessageBox.Show(exc.Message);
             }
+
         }
     }
 }

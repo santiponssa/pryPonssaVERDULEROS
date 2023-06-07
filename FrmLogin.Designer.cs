@@ -28,52 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lblNombreVend = new System.Windows.Forms.Label();
+            this.txtKilos = new System.Windows.Forms.TextBox();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblNombreProd = new System.Windows.Forms.Label();
+            this.lblKilos = new System.Windows.Forms.Label();
+            this.lstNombreVend = new System.Windows.Forms.ComboBox();
+            this.lstNombreProd = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNombreVend
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre Vendedor";
+            this.lblNombreVend.AutoSize = true;
+            this.lblNombreVend.Location = new System.Drawing.Point(19, 32);
+            this.lblNombreVend.Name = "lblNombreVend";
+            this.lblNombreVend.Size = new System.Drawing.Size(93, 13);
+            this.lblNombreVend.TabIndex = 0;
+            this.lblNombreVend.Text = "Nombre Vendedor";
             // 
-            // textBox2
+            // txtKilos
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(54, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtKilos.Location = new System.Drawing.Point(118, 104);
+            this.txtKilos.Name = "txtKilos";
+            this.txtKilos.Size = new System.Drawing.Size(54, 20);
+            this.txtKilos.TabIndex = 3;
             // 
-            // button1
+            // btnRegistrar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(295, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 41);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Location = new System.Drawing.Point(295, 120);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(94, 41);
+            this.btnRegistrar.TabIndex = 4;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.lstNombreProd);
+            this.groupBox1.Controls.Add(this.lstNombreVend);
+            this.groupBox1.Controls.Add(this.lblKilos);
+            this.groupBox1.Controls.Add(this.lblNombreProd);
+            this.groupBox1.Controls.Add(this.lblNombreVend);
+            this.groupBox1.Controls.Add(this.txtKilos);
             this.groupBox1.Location = new System.Drawing.Point(12, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(257, 142);
@@ -81,41 +81,41 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro";
             // 
-            // label2
+            // lblNombreProd
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Nombre Producto";
+            this.lblNombreProd.AutoSize = true;
+            this.lblNombreProd.Location = new System.Drawing.Point(19, 69);
+            this.lblNombreProd.Name = "lblNombreProd";
+            this.lblNombreProd.Size = new System.Drawing.Size(90, 13);
+            this.lblNombreProd.TabIndex = 4;
+            this.lblNombreProd.Text = "Nombre Producto";
             // 
-            // label3
+            // lblKilos
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Kilos";
+            this.lblKilos.AutoSize = true;
+            this.lblKilos.Location = new System.Drawing.Point(19, 107);
+            this.lblKilos.Name = "lblKilos";
+            this.lblKilos.Size = new System.Drawing.Size(29, 13);
+            this.lblKilos.TabIndex = 5;
+            this.lblKilos.Text = "Kilos";
             // 
-            // comboBox1
+            // lstNombreVend
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(118, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 6;
+            this.lstNombreVend.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstNombreVend.FormattingEnabled = true;
+            this.lstNombreVend.Location = new System.Drawing.Point(118, 29);
+            this.lstNombreVend.Name = "lstNombreVend";
+            this.lstNombreVend.Size = new System.Drawing.Size(121, 21);
+            this.lstNombreVend.TabIndex = 6;
             // 
-            // comboBox2
+            // lstNombreProd
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(118, 66);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 7;
+            this.lstNombreProd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstNombreProd.FormattingEnabled = true;
+            this.lstNombreProd.Location = new System.Drawing.Point(118, 66);
+            this.lstNombreProd.Name = "lstNombreProd";
+            this.lstNombreProd.Size = new System.Drawing.Size(121, 21);
+            this.lstNombreProd.TabIndex = 7;
             // 
             // label4
             // 
@@ -133,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 228);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -148,14 +148,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblNombreVend;
+        private System.Windows.Forms.TextBox txtKilos;
+        private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox lstNombreProd;
+        private System.Windows.Forms.ComboBox lstNombreVend;
+        private System.Windows.Forms.Label lblKilos;
+        private System.Windows.Forms.Label lblNombreProd;
         private System.Windows.Forms.Label label4;
     }
 }

@@ -36,30 +36,59 @@ namespace pryPonssaVERDULEROS
         {
             comm.Connection = conn;
             comm.CommandType = System.Data.CommandType.TableDirect;
-            comm.CommandText = "Proveedores";
+            comm.CommandText = "Vendedores";
             rdr = comm.ExecuteReader();
-            cmb.Items.Clear();
+            //cmb.Items.Clear();
             while (rdr.Read())
             {
-                cmb.Items.Add(rdr.GetString(8));
+                cmb.Items.Add(rdr.GetString(1));
+            }
+            rdr.Close();
+            comm.CommandText = "Productos";
+            rdr = comm.ExecuteReader();
+            //cmb.Items.Clear();
+            while (rdr.Read())
+            {
+                cmb.Items.Add(rdr.GetString(1));
             }
             rdr.Close();
         }
 
-        public void CargarLst(ComboBox cmb, string NombrePais)
+        public void CargarLst(ComboBox cmb, string NombreVendedor)
         {
             comm.Connection = conn;
             comm.CommandType = System.Data.CommandType.TableDirect;
-            comm.CommandText = "Proveedores";
+            comm.CommandText = "Vendedores";
 
             rdr = comm.ExecuteReader();
 
             //Limpio para que o se acumule 
-            cmb.Items.Clear();
+            //cmb.Items.Clear();
 
             while (rdr.Read())
             {
-                if (rdr.GetString(8) == NombrePais)
+                if (rdr.GetString(1) == NombreVendedor)
+                {
+                    cmb.Items.Add(rdr.GetString(5));
+                }
+
+            }
+            rdr.Close();
+        }
+        public void CargarLst(ComboBox cmb, string NombreProducto)
+        {
+            comm.Connection = conn;
+            comm.CommandType = System.Data.CommandType.TableDirect;
+            comm.CommandText = "Productos";
+
+            rdr = comm.ExecuteReader();
+
+            //Limpio para que o se acumule 
+            //cmb.Items.Clear();
+
+            while (rdr.Read())
+            {
+                if (rdr.GetString(1) == NombreProducto)
                 {
                     cmb.Items.Add(rdr.GetString(5));
                 }
