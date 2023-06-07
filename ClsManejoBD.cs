@@ -32,5 +32,40 @@ namespace pryPonssaVERDULEROS
                 MessageBox.Show("Error: " + error.Message);
             }
         }
+        public void CargarLst(ComboBox cmb)
+        {
+            comm.Connection = conn;
+            comm.CommandType = System.Data.CommandType.TableDirect;
+            comm.CommandText = "Proveedores";
+            rdr = comm.ExecuteReader();
+            cmb.Items.Clear();
+            while (rdr.Read())
+            {
+                cmb.Items.Add(rdr.GetString(8));
+            }
+            rdr.Close();
+        }
+
+        public void CargarLst(ComboBox cmb, string NombrePais)
+        {
+            comm.Connection = conn;
+            comm.CommandType = System.Data.CommandType.TableDirect;
+            comm.CommandText = "Proveedores";
+
+            rdr = comm.ExecuteReader();
+
+            //Limpio para que o se acumule 
+            cmb.Items.Clear();
+
+            while (rdr.Read())
+            {
+                if (rdr.GetString(8) == NombrePais)
+                {
+                    cmb.Items.Add(rdr.GetString(5));
+                }
+
+            }
+            rdr.Close();
+        }
     }
 }
