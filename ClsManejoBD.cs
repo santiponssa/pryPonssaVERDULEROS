@@ -35,7 +35,7 @@ namespace pryPonssaVERDULEROS
 
         internal void CargarLst(ComboBox lstNombreVend)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void CargarLst(ComboBox cmb, ComboBox cmb1)
