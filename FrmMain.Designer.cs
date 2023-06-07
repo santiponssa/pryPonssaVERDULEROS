@@ -104,6 +104,7 @@
             this.Controls.Add(this.lblVentas);
             this.Controls.Add(this.dgvVentas);
             this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas Verduleria";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentas)).EndInit();

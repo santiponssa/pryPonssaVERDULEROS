@@ -13,9 +13,10 @@ namespace pryPonssaVERDULEROS
 {
     public partial class FrmMain : Form
     {
+        ClsManejoBD objBD = new ClsManejoBD();
         OleDbCommand comm = new OleDbCommand();
         OleDbConnection conn = new OleDbConnection();
-
+        OleDbDataReader rdr;
 
         public FrmMain()
         {
@@ -24,7 +25,14 @@ namespace pryPonssaVERDULEROS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                objBD.ConectarBD();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
         }
 
         private void btnLeer_Click(object sender, EventArgs e)
