@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblNombreVend = new System.Windows.Forms.Label();
-            this.txtKilos = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblNombreProd = new System.Windows.Forms.Label();
@@ -37,6 +36,7 @@
             this.lstNombreVend = new System.Windows.Forms.ComboBox();
             this.lstNombreProd = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,13 +48,6 @@
             this.lblNombreVend.Size = new System.Drawing.Size(93, 13);
             this.lblNombreVend.TabIndex = 0;
             this.lblNombreVend.Text = "Nombre Vendedor";
-            // 
-            // txtKilos
-            // 
-            this.txtKilos.Location = new System.Drawing.Point(118, 104);
-            this.txtKilos.Name = "txtKilos";
-            this.txtKilos.Size = new System.Drawing.Size(54, 20);
-            this.txtKilos.TabIndex = 3;
             // 
             // btnRegistrar
             // 
@@ -68,12 +61,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.maskedTextBox1);
             this.groupBox1.Controls.Add(this.lstNombreProd);
             this.groupBox1.Controls.Add(this.lstNombreVend);
             this.groupBox1.Controls.Add(this.lblKilos);
             this.groupBox1.Controls.Add(this.lblNombreProd);
             this.groupBox1.Controls.Add(this.lblNombreVend);
-            this.groupBox1.Controls.Add(this.txtKilos);
             this.groupBox1.Location = new System.Drawing.Point(12, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(257, 142);
@@ -127,6 +120,14 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "VERDULERIA";
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(118, 104);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(60, 20);
+            this.maskedTextBox1.TabIndex = 8;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            // 
             // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,7 +150,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblNombreVend;
-        private System.Windows.Forms.TextBox txtKilos;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox lstNombreProd;
@@ -157,5 +157,6 @@
         private System.Windows.Forms.Label lblKilos;
         private System.Windows.Forms.Label lblNombreProd;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
