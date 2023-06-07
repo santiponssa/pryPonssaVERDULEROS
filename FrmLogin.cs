@@ -7,14 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace pryPonssaVERDULEROS
 {
     public partial class FrmLogin : Form
     {
+        ClsManejoBD objBD = new ClsManejoBD();
+        OleDbCommand comm = new OleDbCommand();
+        OleDbConnection conn = new OleDbConnection();
+        OleDbDataReader rdr;
         public FrmLogin()
         {
             InitializeComponent();
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                objBD.ConectarBD();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
         }
     }
 }
