@@ -41,7 +41,7 @@ namespace pryPonssaVERDULEROS
         {
             try
             {
-                
+                //objBD.RegistrarVenta();
             }
             catch (Exception exc)
             {
