@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsManejoBD.cs" />
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="FrmCarga.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <Compile Include="FrmCarga.Designer.cs">
+      <DependentUpon>FrmCarga.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VERDULEROSDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmLogin.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCarga.resx">
+      <DependentUpon>FrmCarga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>

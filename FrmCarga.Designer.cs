@@ -31,12 +31,12 @@
             this.lblNombreVend = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblNombreProd = new System.Windows.Forms.Label();
-            this.lblKilos = new System.Windows.Forms.Label();
-            this.lstNombreVend = new System.Windows.Forms.ComboBox();
-            this.lstNombreProd = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.lstNombreProd = new System.Windows.Forms.ComboBox();
+            this.lstNombreVend = new System.Windows.Forms.ComboBox();
+            this.lblKilos = new System.Windows.Forms.Label();
+            this.lblNombreProd = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,32 +75,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro";
             // 
-            // lblNombreProd
+            // maskedTextBox1
             // 
-            this.lblNombreProd.AutoSize = true;
-            this.lblNombreProd.Location = new System.Drawing.Point(19, 69);
-            this.lblNombreProd.Name = "lblNombreProd";
-            this.lblNombreProd.Size = new System.Drawing.Size(90, 13);
-            this.lblNombreProd.TabIndex = 4;
-            this.lblNombreProd.Text = "Nombre Producto";
-            // 
-            // lblKilos
-            // 
-            this.lblKilos.AutoSize = true;
-            this.lblKilos.Location = new System.Drawing.Point(19, 107);
-            this.lblKilos.Name = "lblKilos";
-            this.lblKilos.Size = new System.Drawing.Size(29, 13);
-            this.lblKilos.TabIndex = 5;
-            this.lblKilos.Text = "Kilos";
-            // 
-            // lstNombreVend
-            // 
-            this.lstNombreVend.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstNombreVend.FormattingEnabled = true;
-            this.lstNombreVend.Location = new System.Drawing.Point(118, 29);
-            this.lstNombreVend.Name = "lstNombreVend";
-            this.lstNombreVend.Size = new System.Drawing.Size(121, 21);
-            this.lstNombreVend.TabIndex = 6;
+            this.maskedTextBox1.Location = new System.Drawing.Point(118, 104);
+            this.maskedTextBox1.Mask = "99999";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(60, 20);
+            this.maskedTextBox1.TabIndex = 8;
+            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.maskedTextBox1.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
+            this.maskedTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox1_KeyPress);
             // 
             // lstNombreProd
             // 
@@ -111,6 +95,33 @@
             this.lstNombreProd.Size = new System.Drawing.Size(121, 21);
             this.lstNombreProd.TabIndex = 7;
             // 
+            // lstNombreVend
+            // 
+            this.lstNombreVend.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstNombreVend.FormattingEnabled = true;
+            this.lstNombreVend.Location = new System.Drawing.Point(118, 29);
+            this.lstNombreVend.Name = "lstNombreVend";
+            this.lstNombreVend.Size = new System.Drawing.Size(121, 21);
+            this.lstNombreVend.TabIndex = 6;
+            // 
+            // lblKilos
+            // 
+            this.lblKilos.AutoSize = true;
+            this.lblKilos.Location = new System.Drawing.Point(19, 107);
+            this.lblKilos.Name = "lblKilos";
+            this.lblKilos.Size = new System.Drawing.Size(29, 13);
+            this.lblKilos.TabIndex = 5;
+            this.lblKilos.Text = "Kilos";
+            // 
+            // lblNombreProd
+            // 
+            this.lblNombreProd.AutoSize = true;
+            this.lblNombreProd.Location = new System.Drawing.Point(19, 69);
+            this.lblNombreProd.Name = "lblNombreProd";
+            this.lblNombreProd.Size = new System.Drawing.Size(90, 13);
+            this.lblNombreProd.TabIndex = 4;
+            this.lblNombreProd.Text = "Nombre Producto";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -120,14 +131,6 @@
             this.label4.Size = new System.Drawing.Size(209, 33);
             this.label4.TabIndex = 6;
             this.label4.Text = "VERDULERIA";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(118, 104);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(60, 20);
-            this.maskedTextBox1.TabIndex = 8;
-            this.maskedTextBox1.ValidatingType = typeof(int);
             // 
             // FrmRegistro
             // 

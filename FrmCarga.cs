@@ -41,5 +41,15 @@ namespace pryPonssaVERDULEROS
         {
 
         }
+
+        private void maskedTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
