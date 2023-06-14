@@ -39,15 +39,26 @@ namespace pryPonssaVERDULEROS
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show (exc.Message);
+            }
         }
-
         private void maskedTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }
 
         private void maskedTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

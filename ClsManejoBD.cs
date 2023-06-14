@@ -59,5 +59,23 @@ namespace pryPonssaVERDULEROS
             }
             rdr.Close();
         }
+        public void RegistrarVenta(string Vendedor, string Producto, DateTime FechaVenta, string Kilos)
+        {
+            try
+            {
+                comm.Connection = conn;
+                comm.CommandType = System.Data.CommandType.Text;
+
+                comm.CommandText = "INSERT INTO Ventas ([Cod Vendedor], [Cod Producto]," +
+                    " Fecha, Kilos) VALUES (" + Vendedor + "," + Producto
+                    + "," + FechaVenta + "," + Kilos + ")";
+                comm.ExecuteNonQuery();
+                MessageBox.Show("Venta Registrada");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

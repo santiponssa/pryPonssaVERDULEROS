@@ -31,12 +31,14 @@
             this.lblNombreVend = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtKilos = new System.Windows.Forms.MaskedTextBox();
             this.lstNombreProd = new System.Windows.Forms.ComboBox();
             this.lstNombreVend = new System.Windows.Forms.ComboBox();
             this.lblKilos = new System.Windows.Forms.Label();
             this.lblNombreProd = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +54,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(295, 120);
+            this.btnRegistrar.Location = new System.Drawing.Point(296, 143);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(94, 41);
             this.btnRegistrar.TabIndex = 4;
@@ -62,7 +64,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.dtpFecha);
+            this.groupBox1.Controls.Add(this.lblFecha);
+            this.groupBox1.Controls.Add(this.mtxtKilos);
             this.groupBox1.Controls.Add(this.lstNombreProd);
             this.groupBox1.Controls.Add(this.lstNombreVend);
             this.groupBox1.Controls.Add(this.lblKilos);
@@ -70,21 +74,21 @@
             this.groupBox1.Controls.Add(this.lblNombreVend);
             this.groupBox1.Location = new System.Drawing.Point(12, 74);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(257, 142);
+            this.groupBox1.Size = new System.Drawing.Size(257, 176);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro";
             // 
-            // maskedTextBox1
+            // mtxtKilos
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(118, 104);
-            this.maskedTextBox1.Mask = "99999";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(60, 20);
-            this.maskedTextBox1.TabIndex = 8;
-            this.maskedTextBox1.ValidatingType = typeof(int);
-            this.maskedTextBox1.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
-            this.maskedTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox1_KeyPress);
+            this.mtxtKilos.Location = new System.Drawing.Point(118, 143);
+            this.mtxtKilos.Mask = "99999";
+            this.mtxtKilos.Name = "mtxtKilos";
+            this.mtxtKilos.Size = new System.Drawing.Size(45, 20);
+            this.mtxtKilos.TabIndex = 8;
+            this.mtxtKilos.ValidatingType = typeof(int);
+            this.mtxtKilos.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
+            this.mtxtKilos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox1_KeyPress);
             // 
             // lstNombreProd
             // 
@@ -107,7 +111,7 @@
             // lblKilos
             // 
             this.lblKilos.AutoSize = true;
-            this.lblKilos.Location = new System.Drawing.Point(19, 107);
+            this.lblKilos.Location = new System.Drawing.Point(19, 146);
             this.lblKilos.Name = "lblKilos";
             this.lblKilos.Size = new System.Drawing.Size(29, 13);
             this.lblKilos.TabIndex = 5;
@@ -132,11 +136,29 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "VERDULERIA";
             // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Location = new System.Drawing.Point(19, 109);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(37, 13);
+            this.lblFecha.TabIndex = 9;
+            this.lblFecha.Text = "Fecha";
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(118, 103);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(99, 20);
+            this.dtpFecha.TabIndex = 10;
+            this.dtpFecha.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 228);
+            this.ClientSize = new System.Drawing.Size(411, 262);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.groupBox1);
@@ -161,6 +183,8 @@
         private System.Windows.Forms.Label lblKilos;
         private System.Windows.Forms.Label lblNombreProd;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mtxtKilos;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
     }
 }
